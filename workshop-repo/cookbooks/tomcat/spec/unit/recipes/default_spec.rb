@@ -18,5 +18,10 @@ describe 'tomcat::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'includes recipe' do
+      expect(chef_run).to include_recipe('tomcat::server')
+    end
+
   end
 end
