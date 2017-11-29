@@ -8,10 +8,14 @@ This cookbook was created to answer the (challenge-configure-tomcat)[https://lea
 - `chef generate app workshop-repo`
 - `chef generate cookbook workshop-repo/cookbooks/tomcat`
 - `chef generate recipe workshop-repo/cookbooks/tomcat server`
-- `chef generate attriubute workshop-repo/cookbooks/tomcat server`
+- `chef generate attribute workshop-repo/cookbooks/tomcat server`
 - `chef generate template workshop-repo/cookbooks/tomcat tomcat.service`
-- `cd workshop-repo/cookbooks/tomcat`
+- `chef generate cookbook workshop-repo/cookbooks/users`
+- `chef generate attribute workshop-repo/cookbooks/users default`
+- `chef generate template workshop-repo/cookbooks/users sshd_config`
 
+## Vagrant
+Ran the following commands in each cookbook:
 - Vagrant: Project Setup: `vagrant init`
 - Vagrant: Installing a Box: `vagrant box add bento/centos-7.2`
 - Vagrant: bring up VM: `vagrant up`
