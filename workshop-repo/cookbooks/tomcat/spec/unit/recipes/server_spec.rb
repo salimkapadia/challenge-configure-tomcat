@@ -19,8 +19,10 @@ describe 'tomcat::server' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'installs foo' do
-     expect(chef_run).to install_package('tar')
+    %w(tar java-1.7.0-openjdk-devel).each do |package_name|
+      it "install #{package_name}" do
+       expect(chef_run).to install_package("#{package_name}")
+      end
     end
 
   end
