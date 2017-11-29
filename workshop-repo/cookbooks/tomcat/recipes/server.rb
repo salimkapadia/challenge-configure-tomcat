@@ -4,7 +4,7 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-%w(tar java-1.7.0-openjdk-devel).each do |package_name|
+%w(java-1.7.0-openjdk-devel).each do |package_name|
   package package_name
 end
 
