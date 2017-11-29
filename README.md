@@ -8,6 +8,8 @@ This cookbook was created to answer the (challenge-configure-tomcat)[https://lea
 - `chef generate app workshop-repo`
 - `chef generate cookbook workshop-repo/cookbooks/tomcat`
 - `chef generate recipe workshop-repo/cookbooks/tomcat server`
+- `chef generate attriubute workshop-repo/cookbooks/tomcat server`
+- `chef generate template workshop-repo/cookbooks/tomcat tomcat.service`
 - `cd workshop-repo/cookbooks/tomcat`
 
 - Vagrant: Project Setup: `vagrant init`
